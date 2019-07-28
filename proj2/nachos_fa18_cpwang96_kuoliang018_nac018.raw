@@ -1,0 +1,995 @@
+------[ Sat Dec  8 04:23:24 2018 ]------
+--[ read-abc-1: Test reading short file w/ length less than file size ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+****** Opening the file: readabc.txt ********
+
+success
+
+--[ read-abc-2: Test reading short file w/ length equal to file size ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+****** Opening the file: readabc.txt ********
+
+success
+
+--[ read-abc-3: Test reading short file w/ length greater than file size ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+****** Opening the file: readabc.txt ********
+
+nachos.machine.AssertionFailureError: ExitGrader: expected exit status of 26, but program actually exited with -2002
+	at nachos.machine.Lib.assertTrue(Lib.java:89)
+	at nachos.ag.UCSDExitGrader.finishingCurrentProcess(UCSDExitGrader.java:26)
+	at nachos.userprog.UserProcess.handleExit(UserProcess.java:678)
+	at nachos.userprog.UserProcess.handleSyscall(UserProcess.java:926)
+	at nachos.userprog.UserProcess.handleException(UserProcess.java:962)
+	at nachos.userprog.UserKernel.exceptionHandler(UserKernel.java:92)
+	at nachos.userprog.UserKernel$1.run(UserKernel.java:38)
+	at nachos.machine.Processor$MipsException.handle(Processor.java:619)
+	at nachos.machine.Processor.run(Processor.java:101)
+	at nachos.userprog.UThread.runProgram(UThread.java:31)
+	at nachos.userprog.UThread.access$000(UThread.java:11)
+	at nachos.userprog.UThread$1.run(UThread.java:20)
+	at nachos.threads.KThread.runThread(KThread.java:170)
+	at nachos.threads.KThread.access$000(KThread.java:41)
+	at nachos.threads.KThread$1.run(KThread.java:159)
+	at nachos.machine.TCB.threadroot(TCB.java:246)
+	at nachos.machine.TCB.access$100(TCB.java:25)
+	at nachos.machine.TCB$1.run(TCB.java:99)
+	at java.lang.Thread.run(Thread.java:748)
+
+--[ read-abc-4: Read in 10 characters, "abcdefghij", from stdin ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader console
+Attempting to read "abcdefghij" from stdin
+Read -1 bytes from stdin
+buf now contains ""
+Cmp_val: -1, buf: 
+
+nachos.machine.AssertionFailureError: ExitGraderWithStdin: expected exit status of 0, but program actually exited with -1
+	at nachos.machine.Lib.assertTrue(Lib.java:89)
+	at nachos.ag.UCSDExitGraderWithStdin.finishingCurrentProcess(UCSDExitGraderWithStdin.java:26)
+	at nachos.userprog.UserProcess.handleExit(UserProcess.java:678)
+	at nachos.userprog.UserProcess.handleSyscall(UserProcess.java:926)
+	at nachos.userprog.UserProcess.handleException(UserProcess.java:962)
+	at nachos.userprog.UserKernel.exceptionHandler(UserKernel.java:92)
+	at nachos.userprog.UserKernel$1.run(UserKernel.java:38)
+	at nachos.machine.Processor$MipsException.handle(Processor.java:619)
+	at nachos.machine.Processor.run(Processor.java:101)
+	at nachos.userprog.UThread.runProgram(UThread.java:31)
+	at nachos.userprog.UThread.access$000(UThread.java:11)
+	at nachos.userprog.UThread$1.run(UThread.java:20)
+	at nachos.threads.KThread.runThread(KThread.java:170)
+	at nachos.threads.KThread.access$000(KThread.java:41)
+	at nachos.threads.KThread$1.run(KThread.java:159)
+	at nachos.machine.TCB.threadroot(TCB.java:246)
+	at nachos.machine.TCB.access$100(TCB.java:25)
+	at nachos.machine.TCB$1.run(TCB.java:99)
+	at java.lang.Thread.run(Thread.java:748)
+
+--[ read-abc-5: Test reading small amount repeatedly from a file ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+****** Opening the file: readabc.txt ********
+
+success
+
+--[ read-err-badbuf-1: Test handling invalid buf. Read shall return -1 ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+****** Opening the file: readabc.txt ********
+
+success
+
+--[ read-err-badlen: Test handling invalid length. Read shall return -1 ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+success
+
+--[ read-err-fd-1: Test handling invalid file descriptor. Read shall return -1 ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+success
+
+--[ read-err-fd-2: Test handling out of range file descriptor. Read shall return -1 ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+success
+
+--[ read-err-fd-3: Test handling invalid buf, writing to readonly page. Read shall return -1 ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+success
+
+--[ read-long: Test reading large amount from file ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+****** Opening the file: readlong.txt ********
+
+success
+
+--[ write-abc-1: Test writing small amount w/ length less than buf size ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+<---------Creating new File: writeabc.txt----------->
+
+success
+
+--[ write-abc-2: Test writing small amount w/ length equal to buf size ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+success
+
+--[ write-abc-3: Test writing small amount to stdout ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+abcdefghijklmnopqrstuvwxyz
+success
+
+--[ write-abc-4: Test writing small amount repeatedly to a file ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+success
+
+--[ write-err-badbuf-1: Test handling invalid buf. Read shall return -1 ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+success
+
+--[ write-err-badlen: Test handling invalid length. Read shall return -1 ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+success
+
+--[ write-err-fd-1: Test handling invalid file descriptor when calling write. Read shall return -1 ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+success
+
+--[ write-err-fd-2: Test handling out of range file descriptor when calling write. Read shall return -1 ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+success
+
+--[ write-err-fd-3: Test handling out of range file descriptor when calling write. Read shall return -1 ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+success
+
+--[ write-long: Test writing large amount to file ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+<---------Creating new File: writelong.txt----------->
+
+success
+
+--[ write1: Write a string to stdout, one byte at a time ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+roses are red
+violets are blue
+I love Nachos
+and so do you
+
+
+success
+
+--[ write10: Test the write system call under a variety of good and bad conditions ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+creating write.out...
+<---------Creating new File: write.out----------->
+...passed (fd = 2)
+writing 59 bytes to file, 59 bytes at a time...
+...passed (wrote 59 bytes)
+closing 2...
+opening write.out...
+****** Opening the file: write.out ********
+...passed (fd = 2)
+reading write.out into buffer...
+...success
+validating write.out...
+...passed
+closing 2...
+creating write.out...
+...passed (fd = 2)
+writing 59 bytes to file, 8 bytes at a time...
+...passed (wrote 8 bytes)
+...passed (wrote 8 bytes)
+...passed (wrote 8 bytes)
+...passed (wrote 8 bytes)
+...passed (wrote 8 bytes)
+...passed (wrote 8 bytes)
+...passed (wrote 8 bytes)
+...passed (wrote 3 bytes)
+closing 2...
+opening write.out...
+****** Opening the file: write.out ********
+...passed (fd = 2)
+reading write.out into buffer...
+...success
+validating write.out...
+...passed
+closing 2...
+creating write.out...
+...passed (fd = 2)
+writing 59 bytes to file, 1 bytes at a time...
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+...passed (wrote 1 bytes)
+closing 2...
+opening write.out...
+****** Opening the file: write.out ********
+...passed (fd = 2)
+reading write.out into buffer...
+...success
+validating write.out...
+...passed
+closing 2...
+creating binary.out...
+<---------Creating new File: binary.out----------->
+...passed (fd = 2)
+writing 4096 bytes to file, 4096 bytes at a time...
+...passed (wrote 4096 bytes)
+closing 2...
+opening binary.out...
+****** Opening the file: binary.out ********
+...passed (fd = 2)
+reading binary.out into buffer...
+...success
+validating binary.out...
+...passed
+closing 2...
+creating binary.out...
+...passed (fd = 2)
+writing 4096 bytes to file, 128 bytes at a time...
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+...passed (wrote 128 bytes)
+closing 2...
+opening binary.out...
+****** Opening the file: binary.out ********
+...passed (fd = 2)
+reading binary.out into buffer...
+...success
+validating binary.out...
+...passed
+closing 2...
+writing to an invalid fd (-10)...
+...passed (r = -1)
+writing to an invalid fd (256)...
+...passed (r = -1)
+writing to an unopened fd (8)...
+...passed (r = -1)
+creating bad.out...
+<---------Creating new File: bad.out----------->
+...passed (fd = 2)
+writing count = 0 bytes...
+...passed
+writing with an invalid buffer (should not crash, only return an error)...
+...passed (r = -1)
+writing with an invalid count (should not crash, only return an error)...
+...passed (r = -1)
+writing with a buffer that extends beyond the end of the
+address space.  write should return an error.
+...passed (r = -1)
+
+success
+
+--[ open1: Test open single file and get valid fd ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+****** Opening the file: sample_file_1.txt ********
+
+success
+
+--[ open2: Test open a file that does not exist ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+****** Opening the file: sample_file_98.txt ********
+
+success
+
+--[ open3: Check graceful failure of open when OpenFileLimit exceeded ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+****** Opening the file: sample_file_2.txt ********
+****** Opening the file: sample_file_3.txt ********
+****** Opening the file: sample_file_4.txt ********
+****** Opening the file: sample_file_5.txt ********
+****** Opening the file: sample_file_6.txt ********
+****** Opening the file: sample_file_7.txt ********
+****** Opening the file: sample_file_8.txt ********
+****** Opening the file: sample_file_9.txt ********
+****** Opening the file: sample_file_10.txt ********
+****** Opening the file: sample_file_11.txt ********
+****** Opening the file: sample_file_12.txt ********
+****** Opening the file: sample_file_13.txt ********
+****** Opening the file: sample_file_14.txt ********
+****** Opening the file: sample_file_15.txt ********
+****** Opening the file: sample_file_16.txt ********
+
+success
+
+--[ open4: Check that duplicate fd is not given for two different files ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+****** Opening the file: sample_file_1.txt ********
+****** Opening the file: sample_file_2.txt ********
+
+success
+
+--[ open5: Check that duplicate fd is not given for same file ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+****** Opening the file: sample_file_1.txt ********
+****** Opening the file: sample_file_1.txt ********
+
+success
+
+--[ open6: Check stdin and stdout not messed with i.e. fd is not assigned to new file ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+****** Opening the file: sample_file_2.txt ********
+****** Opening the file: sample_file_3.txt ********
+****** Opening the file: sample_file_4.txt ********
+****** Opening the file: sample_file_5.txt ********
+****** Opening the file: sample_file_6.txt ********
+****** Opening the file: sample_file_7.txt ********
+****** Opening the file: sample_file_8.txt ********
+****** Opening the file: sample_file_9.txt ********
+****** Opening the file: sample_file_10.txt ********
+****** Opening the file: sample_file_11.txt ********
+****** Opening the file: sample_file_12.txt ********
+****** Opening the file: sample_file_13.txt ********
+****** Opening the file: sample_file_14.txt ********
+****** Opening the file: sample_file_15.txt ********
+
+success
+
+--[ open7: Check duplicate fd not given for many files ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+****** Opening the file: sample_file_2.txt ********
+****** Opening the file: sample_file_3.txt ********
+****** Opening the file: sample_file_4.txt ********
+****** Opening the file: sample_file_5.txt ********
+****** Opening the file: sample_file_6.txt ********
+****** Opening the file: sample_file_7.txt ********
+****** Opening the file: sample_file_8.txt ********
+****** Opening the file: sample_file_9.txt ********
+****** Opening the file: sample_file_10.txt ********
+****** Opening the file: sample_file_11.txt ********
+****** Opening the file: sample_file_12.txt ********
+****** Opening the file: sample_file_13.txt ********
+****** Opening the file: sample_file_14.txt ********
+****** Opening the file: sample_file_15.txt ********
+
+success
+
+--[ creat1: Test creat single file and get valid fd ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+success
+
+--[ creat2: Test creat a file that does not exist ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+<---------Creating new File: sample_file_99.txt----------->
+
+success
+
+--[ creat3: Check graceful failure of open when OpenFileLimit exceeded ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+****** Opening the file: sample_file_2.txt ********
+****** Opening the file: sample_file_3.txt ********
+****** Opening the file: sample_file_4.txt ********
+****** Opening the file: sample_file_5.txt ********
+****** Opening the file: sample_file_6.txt ********
+****** Opening the file: sample_file_7.txt ********
+****** Opening the file: sample_file_8.txt ********
+****** Opening the file: sample_file_9.txt ********
+****** Opening the file: sample_file_10.txt ********
+****** Opening the file: sample_file_11.txt ********
+****** Opening the file: sample_file_12.txt ********
+****** Opening the file: sample_file_13.txt ********
+****** Opening the file: sample_file_14.txt ********
+****** Opening the file: sample_file_15.txt ********
+****** Opening the file: sample_file_16.txt ********
+
+success
+
+--[ creat4: Check that duplicate fd is not given for two different files ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+success
+
+--[ creat5: Check that duplicate fd is not given for same file ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+success
+
+--[ creat6: Check stdin and stdout not messed with i.e. fd is not assigned to new file ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+success
+
+--[ creat7: Check duplicate fd not given for many files ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+success
+
+--[ unlink1: Test unlink single file and get status ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+success
+
+--[ unlink2: Test unlink on invalid file ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+success
+
+--[ unlink3: Test unlink single file and then try to open it, should fail ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+****** Opening the file: sample_file_19.txt ********
+
+success
+
+--[ unlink4: open file, then unlink, read to make sure we can still read ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+****** Opening the file: sample_file_20.txt ********
+
+success
+
+--[ close1: Test close bogus file descriptor returns ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+success
+
+--[ close2: Test close on valid fd assuming open works ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+****** Opening the file: sample_file_0.txt ********
+
+success
+
+--[ close3: Test to close stdin ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+success
+
+--[ close4: Test to close stdout ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+success
+
+--[ close5: Test to close stdin/stdout and open 15 files ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+****** Opening the file: sample_file_0.txt ********
+****** Opening the file: sample_file_1.txt ********
+****** Opening the file: sample_file_10.txt ********
+****** Opening the file: sample_file_11.txt ********
+****** Opening the file: sample_file_12.txt ********
+****** Opening the file: sample_file_13.txt ********
+****** Opening the file: sample_file_14.txt ********
+****** Opening the file: sample_file_15.txt ********
+****** Opening the file: sample_file_16.txt ********
+****** Opening the file: sample_file_2.txt ********
+****** Opening the file: sample_file_3.txt ********
+****** Opening the file: sample_file_4.txt ********
+****** Opening the file: sample_file_5.txt ********
+****** Opening the file: sample_file_6.txt ********
+****** Opening the file: sample_file_7.txt ********
+
+success
+
+--[ exec1: Execute a simple program (one child) ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Creating child process...
+Parent process id is: 1
+Child's process id is: 2
+Child executing!!!
+
+success
+
+--[ exec2: Execute multiple programs (three children) ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Creating child process...
+Parent process id is: 1
+Child's process id is: 2
+Child executing!!!
+Creating child process...
+Parent process id is: 1
+Child's process id is: 3
+Child executing!!!
+Creating child process...
+Parent process id is: 1
+Child's process id is: 4
+Child executing!!!
+
+success
+
+--[ exec3: Execute an invalid program ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+success
+
+--[ exec4: Execute a bad program (out of memory) ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Creating child process...
+Parent process id is: 1
+Error happening while executing!
+
+success
+
+--[ exec6: Execute with arguments ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Creating child process...
+Parent process id is: 1
+Child's process id is: 2
+Child executing!!!
+Child process exit status is: null
+
+java.lang.NullPointerException
+	at nachos.userprog.UserProcess.handleJoin(UserProcess.java:823)
+	at nachos.userprog.UserProcess.handleSyscall(UserProcess.java:942)
+	at nachos.userprog.UserProcess.handleException(UserProcess.java:962)
+	at nachos.userprog.UserKernel.exceptionHandler(UserKernel.java:92)
+	at nachos.userprog.UserKernel$1.run(UserKernel.java:38)
+	at nachos.machine.Processor$MipsException.handle(Processor.java:619)
+	at nachos.machine.Processor.run(Processor.java:101)
+	at nachos.userprog.UThread.runProgram(UThread.java:31)
+	at nachos.userprog.UThread.access$000(UThread.java:11)
+	at nachos.userprog.UThread$1.run(UThread.java:20)
+	at nachos.threads.KThread.runThread(KThread.java:170)
+	at nachos.threads.KThread.access$000(KThread.java:41)
+	at nachos.threads.KThread$1.run(KThread.java:159)
+	at nachos.machine.TCB.threadroot(TCB.java:246)
+	at nachos.machine.TCB.access$100(TCB.java:25)
+	at nachos.machine.TCB$1.run(TCB.java:99)
+	at java.lang.Thread.run(Thread.java:748)
+
+--[ exit1: Basic single process exit testcase ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+success
+
+--[ exit2: Test if process is freeing pages correctly on exit ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Creating child process...
+Parent process id is: 1
+Child's process id is: 2
+Child executing!!!
+Exiting!!!! The exiting process's id is: 2
+Parent is not null!!!
+Finishing thread!!!
+Child number 0 created with pid 2
+Creating child process...
+Parent process id is: 1
+Child's process id is: 3
+Child executing!!!
+Exiting!!!! The exiting process's id is: 3
+Parent is not null!!!
+Finishing thread!!!
+Child number 1 created with pid 3
+Creating child process...
+Parent process id is: 1
+Child's process id is: 4
+Child executing!!!
+Exiting!!!! The exiting process's id is: 4
+Parent is not null!!!
+Finishing thread!!!
+Child number 2 created with pid 4
+Creating child process...
+Parent process id is: 1
+Child's process id is: 5
+Child executing!!!
+Exiting!!!! The exiting process's id is: 5
+Parent is not null!!!
+Finishing thread!!!
+Child number 3 created with pid 5
+Creating child process...
+Parent process id is: 1
+Child's process id is: 6
+Child executing!!!
+Exiting!!!! The exiting process's id is: 6
+Parent is not null!!!
+Finishing thread!!!
+Child number 4 created with pid 6
+Creating child process...
+Parent process id is: 1
+Child's process id is: 7
+Child executing!!!
+Exiting!!!! The exiting process's id is: 7
+Parent is not null!!!
+Finishing thread!!!
+Child number 5 created with pid 7
+Creating child process...
+Parent process id is: 1
+Child's process id is: 8
+Child executing!!!
+Exiting!!!! The exiting process's id is: 8
+Parent is not null!!!
+Finishing thread!!!
+Child number 6 created with pid 8
+Creating child process...
+Parent process id is: 1
+Child's process id is: 9
+Child executing!!!
+Exiting!!!! The exiting process's id is: 9
+Parent is not null!!!
+Finishing thread!!!
+Child number 7 created with pid 9
+Creating child process...
+Parent process id is: 1
+Child's process id is: 10
+Child executing!!!
+Exiting!!!! The exiting process's id is: 10
+Parent is not null!!!
+Finishing thread!!!
+Child number 8 created with pid 10
+Creating child process...
+Parent process id is: 1
+Child's process id is: 11
+Child executing!!!
+Exiting!!!! The exiting process's id is: 11
+Parent is not null!!!
+Finishing thread!!!
+Child number 9 created with pid 11
+
+success
+
+--[ exit3: Test if process is closing the open files on exit ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Creating child process...
+Parent process id is: 1
+Child's process id is: 2
+Child executing!!!
+****** Opening the file: exit_child.coff ********
+****** Opening the file: exit_child.coff ********
+The file descriptors of the opened files are 2 and 3
+Exiting!!!! The exiting process's id is: 2
+Parent is not null!!!
+Finishing thread!!!
+Child number 0 created with pid 2
+
+success
+
+--[ exit4: Test if exit status of child is returned to parent via join - single child ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Creating child process...
+Parent process id is: 1
+Child's process id is: 2
+Child executing!!!
+Child process exit status is: null
+
+java.lang.NullPointerException
+	at nachos.userprog.UserProcess.handleJoin(UserProcess.java:823)
+	at nachos.userprog.UserProcess.handleSyscall(UserProcess.java:942)
+	at nachos.userprog.UserProcess.handleException(UserProcess.java:962)
+	at nachos.userprog.UserKernel.exceptionHandler(UserKernel.java:92)
+	at nachos.userprog.UserKernel$1.run(UserKernel.java:38)
+	at nachos.machine.Processor$MipsException.handle(Processor.java:619)
+	at nachos.machine.Processor.run(Processor.java:101)
+	at nachos.userprog.UThread.runProgram(UThread.java:31)
+	at nachos.userprog.UThread.access$000(UThread.java:11)
+	at nachos.userprog.UThread$1.run(UThread.java:20)
+	at nachos.threads.KThread.runThread(KThread.java:170)
+	at nachos.threads.KThread.access$000(KThread.java:41)
+	at nachos.threads.KThread$1.run(KThread.java:159)
+	at nachos.machine.TCB.threadroot(TCB.java:246)
+	at nachos.machine.TCB.access$100(TCB.java:25)
+	at nachos.machine.TCB$1.run(TCB.java:99)
+	at java.lang.Thread.run(Thread.java:748)
+
+--[ exit5: Test if exit status of child is returned to parent via join - multiple children ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Creating child process...
+Parent process id is: 1
+Child's process id is: 2
+Child executing!!!
+Creating child process...
+Parent process id is: 1
+Exiting!!!! The exiting process's id is: 2
+Parent is not null!!!
+Finishing thread!!!
+Child's process id is: 3
+Child executing!!!
+Creating child process...
+Parent process id is: 1
+Exiting!!!! The exiting process's id is: 3
+Parent is not null!!!
+Finishing thread!!!
+Child's process id is: 4
+Child executing!!!
+Child process exit status is: 0
+Child process exit status is: 0
+Child process exit status is: 0
+****** Opening the file: exit_child.coff ********
+Expec****** Opening the file: exit_child.coff ********
+ted status is T7h7e7  fainlde  rdeetsucrrniepdt osrtsa toufs  tihse  7o7p7e
+neEdx pfeiclteesd  asrtea t2u sa nids  36
+Exiting!!!! The exiting process's id is: 4
+Parent is not null!!!
+Finishing thread!!!
+66 and returned status is 777
+
+nachos.machine.AssertionFailureError: ParentChildExitGrader: expected parent status of 0, but parent actually exited with -4
+-1 indicates process 1 creation failed
+-2 indicates the return value of join() is incorrect
+-4 indicates the status value of join() is incorrect
+
+	at nachos.machine.Lib.assertTrue(Lib.java:89)
+	at nachos.ag.UCSDParentChildExitGrader.exitCalled(UCSDParentChildExitGrader.java:77)
+	at nachos.ag.UCSDParentChildExitGrader.finishingCurrentProcess(UCSDParentChildExitGrader.java:49)
+	at nachos.userprog.UserProcess.handleExit(UserProcess.java:678)
+	at nachos.userprog.UserProcess.handleSyscall(UserProcess.java:926)
+	at nachos.userprog.UserProcess.handleException(UserProcess.java:962)
+	at nachos.userprog.UserKernel.exceptionHandler(UserKernel.java:92)
+	at nachos.userprog.UserKernel$1.run(UserKernel.java:38)
+	at nachos.machine.Processor$MipsException.handle(Processor.java:619)
+	at nachos.machine.Processor.run(Processor.java:101)
+	at nachos.userprog.UThread.runProgram(UThread.java:31)
+	at nachos.userprog.UThread.access$000(UThread.java:11)
+	at nachos.userprog.UThread$1.run(UThread.java:20)
+	at nachos.threads.KThread.runThread(KThread.java:170)
+	at nachos.threads.KThread.access$000(KThread.java:41)
+	at nachos.threads.KThread$1.run(KThread.java:159)
+	at nachos.machine.TCB.threadroot(TCB.java:246)
+	at nachos.machine.TCB.access$100(TCB.java:25)
+	at nachos.machine.TCB$1.run(TCB.java:99)
+	at java.lang.Thread.run(Thread.java:748)
+
+--[ join1: After exec-ing the child; it waits for the child to exit. ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+execing exit1.coff...
+Creating child process...
+Parent process id is: 1
+Child's process id is: 2
+Child executing!!!
+Exiting!!!! The exiting process's id is: 2
+Parent is not null!!!
+Finishing thread!!!
+...passed
+joining 2...
+Child process exit status is: 0
+...return val passed
+...status passed
+
+success
+
+--[ join2: Join to child that has not exited yet ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+execing join2-child.coff and calling join before child finishes...
+Creating child process...
+Parent process id is: 1
+Child's process id is: 2
+Child executing!!!
+Child process exit status is: null
+
+java.lang.NullPointerException
+	at nachos.userprog.UserProcess.handleJoin(UserProcess.java:823)
+	at nachos.userprog.UserProcess.handleSyscall(UserProcess.java:942)
+	at nachos.userprog.UserProcess.handleException(UserProcess.java:962)
+	at nachos.userprog.UserKernel.exceptionHandler(UserKernel.java:92)
+	at nachos.userprog.UserKernel$1.run(UserKernel.java:38)
+	at nachos.machine.Processor$MipsException.handle(Processor.java:619)
+	at nachos.machine.Processor.run(Processor.java:101)
+	at nachos.userprog.UThread.runProgram(UThread.java:31)
+	at nachos.userprog.UThread.access$000(UThread.java:11)
+	at nachos.userprog.UThread$1.run(UThread.java:20)
+	at nachos.threads.KThread.runThread(KThread.java:170)
+	at nachos.threads.KThread.access$000(KThread.java:41)
+	at nachos.threads.KThread$1.run(KThread.java:159)
+	at nachos.machine.TCB.threadroot(TCB.java:246)
+	at nachos.machine.TCB.access$100(TCB.java:25)
+	at nachos.machine.TCB$1.run(TCB.java:99)
+	at java.lang.Thread.run(Thread.java:748)
+
+--[ join3: Call join on child's child which counts as joining on a process that is not a child of the current process ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+execing join3-child.coff ...
+Creating child process...
+Parent process id is: 1
+Child's process id is: 2
+Child executing!!!
+Creating child process...
+Parent process id is: 2
+join3 joining an existing process that isn't the curreChild's process id is: 3
+Child executing!!!
+Exiting!!!! The exiting process's id is: 2
+Parent is not null!!!
+Finishing thread!!!
+Exiting!!!! The exiting process's id is: 3
+Finishing thread!!!
+nt process' direct child
+Child process exit status is: 0
+...failed with wrong join return val (r = 1)
+
+nachos.machine.AssertionFailureError: ParentChildJoinGrader1: expected parent status of 0, but parent actually exited with -1
+	at nachos.machine.Lib.assertTrue(Lib.java:89)
+	at nachos.ag.UCSDParentChildJoinGrader1.exitCalled(UCSDParentChildJoinGrader1.java:98)
+	at nachos.ag.UCSDParentChildJoinGrader1.finishingCurrentProcess(UCSDParentChildJoinGrader1.java:75)
+	at nachos.userprog.UserProcess.handleExit(UserProcess.java:678)
+	at nachos.userprog.UserProcess.handleSyscall(UserProcess.java:926)
+	at nachos.userprog.UserProcess.handleException(UserProcess.java:962)
+	at nachos.userprog.UserKernel.exceptionHandler(UserKernel.java:92)
+	at nachos.userprog.UserKernel$1.run(UserKernel.java:38)
+	at nachos.machine.Processor$MipsException.handle(Processor.java:619)
+	at nachos.machine.Processor.run(Processor.java:101)
+	at nachos.userprog.UThread.runProgram(UThread.java:31)
+	at nachos.userprog.UThread.access$000(UThread.java:11)
+	at nachos.userprog.UThread$1.run(UThread.java:20)
+	at nachos.threads.KThread.runThread(KThread.java:170)
+	at nachos.threads.KThread.access$000(KThread.java:41)
+	at nachos.threads.KThread$1.run(KThread.java:159)
+	at nachos.machine.TCB.threadroot(TCB.java:246)
+	at nachos.machine.TCB.access$100(TCB.java:25)
+	at nachos.machine.TCB$1.run(TCB.java:99)
+	at java.lang.Thread.run(Thread.java:748)
+
+--[ join4: Joins on a child that exits due to an unhandled exception ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+execing except1.coff ...
+Creating child process...
+Parent process id is: 1
+Child's process id is: 2
+Child executing!!!
+Exiting!!!! The exiting process's id is: 2
+Parent is not null!!!
+Finishing thread!!!
+join4 joining a process that dies due to an unhadled exception
+Child process exit status is: 1
+Sleeping process: 1
+./nachos_executable: line 14: 14500 Killed                  java nachos.machine.Machine $*
+
+--[ join5: Exec 3 children and then join all 3 ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+execing 3 exit1.coff processes...
+Creating child process...
+Parent process id is: 1
+Child's process id is: 2
+Child executing!!!
+Exiting!!!! The exiting process's id is: 2
+Parent is not null!!!
+Finishing thread!!!
+...successfully created child (pid = 2)
+Creating child process...
+Parent process id is: 1
+Child's process id is: 3
+Child executing!!!
+
+success
+
+--[ join6: Should not join on the same process twice ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+execing exit1.coff...
+Creating child process...
+Parent process id is: 1
+Child's process id is: 2
+Child executing!!!
+Exiting!!!! The exiting process's id is: 2
+Parent is not null!!!
+Finishing thread!!!
+...passed
+joining 2...
+Child process exit status is: 0
+...passed (status from child = 123)
+joining 2...
+Parent process 1 does not have child process 2
+...passed
+success
+
+--[ multiprog1: Read 1024 bytes of data from a random page ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+readVMTest() is executing
+createProcess is executing
+
+success
+
+--[ multiprog3: Check process creation and execute ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+createProcess is executing
+
+success
+
+--[ multiprog5: Pocess creation with argv > 1 page should fail ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+createProcess is executing
+
+success
+
+--[ multiprog6: check if process creation fails when memory is out of pages ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+createProcess is executing
+createProcess is executing
+****** Opening the file: readabc.txt ********
+
+success
+
+--[ multiprog7: Read at Invalid virtual address should fail ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+createProcess is executing
+
+success
+
+--[ multiprog8: Write at Invalid virtual address should fail ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+createProcess is executing
+
+success
+
+--[ multiprog9: Free list correctness is not affected ]--
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+createProcess is executing
+createProcess is executing
+****** Opening the file: readabc.txt ********
+
+success
+

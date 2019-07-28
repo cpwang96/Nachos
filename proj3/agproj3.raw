@@ -1,0 +1,451 @@
+------[ Sun Dec  9 18:04:41 2018 ]------
+--[ swap4: Tests swapping by initializing an array larger than physical memory and reading through it - does not dirty the pages again ]--
+stty: standard input: Inappropriate ioctl for device
+stty: standard input: Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+64
+Calling loadSections in VMProcess
+Handling page fault!!!
+Vaddr is: 272
+VPN is 0
+Page Table size is 27
+Free pages size is: 64
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 26616
+VPN is 25
+Page Table size is 27
+Free pages size is: 63
+There is free page that could be used
+Zero filling stack/argument pages!!!!
+
+Handling page fault!!!
+Vaddr is: 1024
+VPN is 1
+Page Table size is 27
+Free pages size is: 62
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 2048
+VPN is 2
+Page Table size is 27
+Free pages size is: 61
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 3072
+VPN is 3
+Page Table size is 27
+Free pages size is: 60
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 4096
+VPN is 4
+Page Table size is 27
+Free pages size is: 59
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 5120
+VPN is 5
+Page Table size is 27
+Free pages size is: 58
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 6144
+VPN is 6
+Page Table size is 27
+Free pages size is: 57
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 7168
+VPN is 7
+Page Table size is 27
+Free pages size is: 56
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 8192
+VPN is 8
+Page Table size is 27
+Free pages size is: 55
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 9216
+VPN is 9
+Page Table size is 27
+Free pages size is: 54
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 10240
+VPN is 10
+Page Table size is 27
+Free pages size is: 53
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 11264
+VPN is 11
+Page Table size is 27
+Free pages size is: 52
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 12288
+VPN is 12
+Page Table size is 27
+Free pages size is: 51
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 13312
+VPN is 13
+Page Table size is 27
+Free pages size is: 50
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 14336
+VPN is 14
+Page Table size is 27
+Free pages size is: 49
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 15360
+VPN is 15
+Page Table size is 27
+Free pages size is: 48
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 16384
+VPN is 16
+Page Table size is 27
+Free pages size is: 47
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 17408
+VPN is 17
+Page Table size is 27
+Free pages size is: 46
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+
+success
+stty: standard input: Inappropriate ioctl for device
+--[ swap5: Tests swapping by initializing an array larger than physical memory and reading through it - dirties the pages again after initialization ]--
+stty: standard input: Inappropriate ioctl for device
+stty: standard input: Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+Allocating free pages inside UserKernel!!!
+64
+Calling loadSections in VMProcess
+Handling page fault!!!
+Vaddr is: 320
+VPN is 0
+Page Table size is 27
+Free pages size is: 64
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 26616
+VPN is 25
+Page Table size is 27
+Free pages size is: 63
+There is free page that could be used
+Zero filling stack/argument pages!!!!
+
+Handling page fault!!!
+Vaddr is: 1024
+VPN is 1
+Page Table size is 27
+Free pages size is: 62
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 2048
+VPN is 2
+Page Table size is 27
+Free pages size is: 61
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 3072
+VPN is 3
+Page Table size is 27
+Free pages size is: 60
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 4096
+VPN is 4
+Page Table size is 27
+Free pages size is: 59
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 5120
+VPN is 5
+Page Table size is 27
+Free pages size is: 58
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 6144
+VPN is 6
+Page Table size is 27
+Free pages size is: 57
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 7168
+VPN is 7
+Page Table size is 27
+Free pages size is: 56
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 8192
+VPN is 8
+Page Table size is 27
+Free pages size is: 55
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 9216
+VPN is 9
+Page Table size is 27
+Free pages size is: 54
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 10240
+VPN is 10
+Page Table size is 27
+Free pages size is: 53
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 11264
+VPN is 11
+Page Table size is 27
+Free pages size is: 52
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 12288
+VPN is 12
+Page Table size is 27
+Free pages size is: 51
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 13312
+VPN is 13
+Page Table size is 27
+Free pages size is: 50
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 14336
+VPN is 14
+Page Table size is 27
+Free pages size is: 49
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 15360
+VPN is 15
+Page Table size is 27
+Free pages size is: 48
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 16384
+VPN is 16
+Page Table size is 27
+Free pages size is: 47
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+Handling page fault!!!
+Vaddr is: 17408
+VPN is 17
+Page Table size is 27
+Free pages size is: 46
+There is free page that could be used
+Found corresponding vpn inside coff file!!!
+
+
+success
+stty: standard input: Inappropriate ioctl for device

@@ -1,0 +1,21 @@
+Project 2 README
+
+Group members: Chuping Wang, Nang Chen, Kuo Liang
+
+Description: For the first task, we have implement the system calls of creat, open, read, write, close 
+and unlink. We have already made sure that the program is not going to be crashed by bogus arguments by 
+various tests. Also, we utilize a sized buffer to pass data between the file and user memory to handle 
+large read and write calls. System calls should return correct values and either -1 or exception thrown 
+for errors. We use file descriptors 0 and 1 to represent standard input and output. And also, our 
+implementation can support at least 16 concurrently open files per process. Then for the second task, we 
+implement support for multiprogramming. We choose linked list to store and manage the physical pages.
+And we use condition variables to implement synchronization in order to prevent race conditions. We have
+then initialized the page table data structure for each user process that maps the virtual addresses to 
+physical addresses. The page table structure is set up for the process to load the program into physical 
+pages that are allocated for their addresses. Also the program can copy data between the kernel and the 
+user's virtual address space. For the third task, it's just a continuation of the first task. On top of 
+the system calls that have been implemented, we have finished implementing exec, join and exit. We have 
+written some simple tests and used the provided tests to test the functionalities of our system calls, 
+readVirtualMemory and writeVirtualMemory implementations.
+
+Contribution of each group members: Chuping Wang for coding, Nang Chen for debugging, Kuo Liang for testing

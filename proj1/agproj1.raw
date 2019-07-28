@@ -1,0 +1,83 @@
+------[ Mon Oct 29 17:30:21 2018 ]------
+--[ ALARM - Tests waitUntil to ensure it waits at least minimum amount of time ]--
+stty: standard input: Inappropriate ioctl for device
+stty: standard input: Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+AlarmTest1: waited for 1020 ticks
+AlarmTest1: waited for 10120 ticks
+AlarmTest1: waited for 100190 ticks
+
+success
+stty: standard input: Inappropriate ioctl for device
+--[ JOIN - Tests join on completed child thread ]--
+stty: standard input: Inappropriate ioctl for device
+stty: standard input: Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+busy...
+I (heart) Nachos!
+busy...
+busy...
+busy...
+busy...
+After joining, child1 should be finished.
+is it? true
+
+success
+stty: standard input: Inappropriate ioctl for device
+--[ CV2 (1) - Strict interlock test. Ping and pong threads alternate. ]--
+stty: standard input: Inappropriate ioctl for device
+stty: standard input: Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+ping
+pong
+ping
+pong
+ping
+pong
+ping
+pong
+ping
+pong
+ping
+pong
+ping
+pong
+ping
+pong
+ping
+pong
+ping
+pong
+
+success
+stty: standard input: Inappropriate ioctl for device
+--[ CV2 (2) - Producer creates list [1,2,3,4,5], consumer pops first element until list is empty. ]--
+stty: standard input: Inappropriate ioctl for device
+stty: standard input: Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+Added 0
+Added 1
+Added 2
+Added 3
+Added 4
+Removed 0
+Removed 1
+Removed 2
+Removed 3
+Removed 4
+
+success
+stty: standard input: Inappropriate ioctl for device
+--[ GAMEMATCH - Create 1 beginner match, incomplete intermediate match, incomplete expert match. ]--
+stty: standard input: Inappropriate ioctl for device
+stty: standard input: Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+B1 Thread is sleeping
+I1 Thread is sleeping
+E1 Thread is sleeping
+B2 Thread is calling wakeAll()
+beg2 matched
+beg1 matched
+
+success
+stty: standard input: Inappropriate ioctl for device
